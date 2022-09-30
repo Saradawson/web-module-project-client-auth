@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
+import FriendsList from './components/FriendsList';
+
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Login />} />
           <Route exact path='/login' element={<Login />} />
-          <Route exact path='/friends' />
+          <Route exact path='/friends' element={<FriendsList />}/>
         </Routes>
       </div>
     </Router>
