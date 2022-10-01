@@ -7,14 +7,13 @@ const FriendsList = () => {
     useEffect(() => {
       axiosWithAuth().get('http://localhost:9000/api/friends')
       .then(res => {
+        console.log(res.data)
         setFriends(res.data);
       })
       .catch(err => {
         console.log(err);
       }) 
     }, [])
-
-    console.log(friends);
 
 
     return(
