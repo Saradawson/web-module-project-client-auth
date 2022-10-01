@@ -1,3 +1,9 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 6%;
+}
+
 .AddFriendForm {
   display: flex;
   flex-direction: column;
